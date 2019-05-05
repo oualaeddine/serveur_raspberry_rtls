@@ -1,0 +1,55 @@
+{
+  "mqtt": {
+    "broker_url": "m24.cloudmqtt.com",
+    "port": 16579,
+    "authentification": {
+      "username": "uapskwwy",
+      "password": "AptftVvsNG81"
+    },
+    "chanel_subscribe": "ktalyse/site1/central",
+    "chanel_publish": "ktalyse/site1/relai"
+  },
+  "websocket": "ws://localhost:6001",
+  "sim800": {
+    "path": "/dev/ttyAMA0",
+    "baudrate": 9600
+  },
+  "location": {
+    "spaces": [
+      {
+        "id": 1,
+        "name": "Piece1",
+        "minSignal": -70
+      },
+      {
+        "id": 2,
+        "name": "Piece2",
+        "minSignal": -70
+      }
+    ],
+    "bracelets": [
+      {
+        "uuid": "e2c56db5-dffb-48d2-b060-d0f5a71096e0",
+        "Major": 1,
+        "Minor": 1
+      }
+    ]
+  },
+  "patients": [
+    {
+      "firstName": "Pierre",
+      "lastName": "GIBON",
+      "uuidBracelet": "e2c56db5-dffb-48d2-b060-d0f5a71096e0",
+      "spaceNoAccess": [
+        2
+      ]
+    }
+  ],
+  "peoples": [
+    {
+      "firstName": "Simon",
+      "lastName": "LIBON",
+      "phoneNumber": "+33661017480"
+    }
+  ]
+}

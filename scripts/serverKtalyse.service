@@ -1,0 +1,14 @@
+[Unit]
+Description=Programe du serveur central de la société Ktalyse
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/node src/serverKtalyse.js
+WorkingDirectory=/home/pi/ServerKtalyse
+StandardOutput=/home/pi/ServerKtalyse/logs/logOutput.txt
+StandardError=/home/pi/ServerKtalyse/logs/logError.txt
+Restart=always
+User=pi
+
+[Install]
+WantedBy=multi-user.target
