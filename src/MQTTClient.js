@@ -114,7 +114,7 @@ module.exports = class MQTTClient {
      */
     notifyAllObservers(eventData) {
         this.handlers.forEach(function(item) {
-            WebsocketClient.notify(eventData);
+            item.notify(eventData);
         });
     }
 

@@ -1,7 +1,7 @@
 {
   "mqtt": {
-    "broker_url": "m24.cloudmqtt.com",
-    "port": 16579,
+    "broker_url": "vps.ktalyse.com",
+    "port": 1883,
     "authentification": {
       "username": "uapskwwy",
       "password": "AptftVvsNG81"
@@ -9,7 +9,9 @@
     "chanel_subscribe": "ktalyse/site1/central",
     "chanel_publish": "ktalyse/site1/relai"
   },
-  "websocket": "ws://localhost:6001",
+  "websocket": {
+    "url": "ws://127.0.0.1:8090"
+  },
   "sim800": {
     "path": "/dev/ttyAMA0",
     "baudrate": 9600
@@ -53,3 +55,4 @@
     }
   ]
 }
+
