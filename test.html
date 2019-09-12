@@ -1,0 +1,15 @@
+<script src="./autobahn.js"></script>
+<script>
+    var conn = new ab.Session('ws://localhost:8080',
+        function() {
+        console.log("connected")
+            conn.subscribe('kittensCategory', function(topic, data) {
+                console.log('New article published to category "' + topic + '" : ' + data);
+            });
+        },
+        function() {
+            console.warn('WebSocket connection closed');
+        },
+        {'skipSubprotocolCheck': true}
+    );
+</script>

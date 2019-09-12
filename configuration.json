@@ -1,16 +1,16 @@
 {
   "mqtt": {
-    "broker_url": "vps.ktalyse.com",
+    "broker_url": "79.137.78.86",
     "port": 1883,
     "authentification": {
-      "username": "uapskwwy",
-      "password": "AptftVvsNG81"
+      "username": "ktalyse",
+      "password": "ktalyse13"
     },
     "chanel_subscribe": "ktalyse/site1/central",
     "chanel_publish": "ktalyse/site1/relai"
   },
   "websocket": {
-    "url": "ws://127.0.0.1:8090"
+    "url": "ws://79.137.78.86:8090"
   },
   "sim800": {
     "path": "/dev/ttyAMA0",

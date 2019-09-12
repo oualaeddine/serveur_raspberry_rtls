@@ -89,10 +89,15 @@ module.exports = class MQTTClient {
         var chanSubTmp = this.chanSub;
         var mqttClient = this.mqttClient;
         var thisObject = this;
-        
-        
+
+
         this.mqttClient.on('connect', function () {
             mqttClient.subscribe(chanSubTmp);
+        });
+        this.mqttClient.on('error', function (e) {
+            mqttClient.subscribe(chanSubTmp);
+            console.log('mqtt client not connected'+e);
+
         });
 
         this.mqttClient.on('message', function (topic, message) {

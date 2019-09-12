@@ -16,7 +16,7 @@ module.exports = class WebsocketClient {
         console.log("init");
         mws = new WebSocket(mWebSocketUrl);
         mws.on('error', function (e) {
-            console.error(e)
+          //  console.error(e)
         });
 
         mws.on('open', function open() {
@@ -38,6 +38,7 @@ module.exports = class WebsocketClient {
      sendMessage(msg) {
         if (isOpen) {
             console.log("sending");
+            console.log(msg);
             mws.send(JSON.stringify(msg));
         }
     }
