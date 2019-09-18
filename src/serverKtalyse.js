@@ -15,13 +15,13 @@ var configuration = new Configuration("../configuration.json");
 
 var mqttClient = new MQTTClient(configuration);
 
-var locator = new Locator(configuration);
+//var locator = new Locator(configuration);
 
 var websocketClient = new WebsocketClient(configuration.getConfigurationData('websocket:url'));
 
 mqttClient.addObserver(websocketClient);
 
-mqttClient.addObserver(locator);
+//mqttClient.addObserver(locator);
 
 //locator.addObserver(sim800Interpreter);
 
