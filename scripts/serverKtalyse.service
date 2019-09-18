@@ -4,9 +4,8 @@ After=network.target
 
 [Service]
 ExecStart=/usr/bin/node src/serverKtalyse.js
-WorkingDirectory=/home/pi/ServerKtalyse
-StandardOutput=/home/pi/ServerKtalyse/logs/logOutput.txt
-StandardError=/home/pi/ServerKtalyse/logs/logError.txt
+WorkingDirectory=/home/serveur_raspberry_rtls/src
+
 Restart=always
 User=pi
 
