@@ -9,7 +9,7 @@ const WebsocketClient = require('./WebsocketClient.js');
 
 console.log("init configuration");
 
-var configuration = new Configuration("../configuration.json");
+var configuration = new Configuration("./configuration.json");
 
 //var sim800Interpreter = new SIM800Interpreter(configuration.getConfigurationData('sim800:path'), configuration.getConfigurationData('sim800:baudrate'));
 

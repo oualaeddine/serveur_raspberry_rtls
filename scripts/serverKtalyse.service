@@ -4,7 +4,7 @@ After=network.target
 
 [Service]
 ExecStart=/usr/bin/node src/serverKtalyse.js
-WorkingDirectory=/home/serveur_raspberry_rtls/src
+WorkingDirectory=/home/pi/serveur_raspberry_rtls
 
 Restart=always
 User=pi
